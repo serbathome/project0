@@ -1,0 +1,36 @@
+.job {
+  background-color: linen;
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+.intro {
+  width: 50%;
+  margin: 10px 50px 10px 10px;
+  padding: 5px;
+}
+
+.main {
+  width: 30%;
+  margin: 10px 50px 10px 10px;
+  padding: 5px;
+}
+
+.block {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#menu {
+  background-color: lightblue;
+  align: center;
+  width: 50%;
+  text-align: center;
+  margin: 2px 10px;
+  padding: 5px;
+}
+
+body {
+  font-family: sans-serif;
+}
