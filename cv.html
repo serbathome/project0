@@ -1,58 +1,122 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>My Webpage - my CV</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <title>My webpage::CV</title>
 </head>
-<body>
-	<h1>My curriculum vitae</h1>
-	<h2 style="color:darkblue;">Sergey Biryukov</h2>
-	<div class="main">
-		<p>
-			Location: Moscow, Russia<br>
-			Education: Samara State University<br>
-			Email: serb@codepros.ru<br>
-			Phone: +79030064614<br>
-		</p>
-	</div>
-	Prior work experience:<br>
-	<div class="job">
-		<p>
-			February 2008 - till today<br>
-			Microsoft Corp, Moscow, Russia<br>
-			Services Practice Leader<br>
-			Managing professional services delivery to enterprise customers in Russia.<br>
-		</p>
-	</div>
-	<div class="job">
-		<p>
-			June 2003 - January 2008<br>
-			Rusfinance LLC, Samara, Russia<br>
-			IT Infrastructure Manager<br>
-			Managing daily operations and IT projects for big retail bank across Russia.<br>
-		</p>
-	</div>
-	<div class = "job">
-		<p>
-			January 2001 - June 2003<br>
-			CTC-Volga LLC, Samara, Russia<br>
-			Programmer & IT administrator<br>
-			Writing and support code for a local TV station<br>
-		</p>
-	</div>
-	<div>
-		<p>
-			<span class="block">Skills:</span> Red Hat Linux, DB (Mysql), Coding (C#, Python, Perl), Frameworks (Flask, Django)<br>
-		</p>
-		<p>
-			<span class="block">Spoken languages:</span>	Russian, English, German<br>
-		</p>
-	</div>
-	<div id="menu">
-		<a href = "index.html">Main</a> |
-		<a href = "cv.html">CV</a> |
-		<a href = "chess.html">Chess</a> |
-		<a href = "contact.html">Contact</a>
-	</div>
+
+<body style="padding-bottom: 70px">
+  <div class="container-fluid" style="background-color: linen; padding-bottom: 10px">
+    <h1>Curriculum Vitae</h1>
+    <h2>Sergey Biryukov</h2>
+    <p>
+      <br> Location: Moscow, Russia
+      <br> Education: Samara State University
+      <br> email: serb@codepros.ru
+      <br> phone: 79030064614
+      <br>
+    </p>
+  </div>
+  <div class="container">
+    <h3>Previous work experience</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Services Practice Leader</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Microsoft, Feb 2008 - till today</h6>
+              <p class="card-text">Managing professional services delivery to enterprise customers in Russia.</p>
+              <a href="https://www.microsoft.com/services" class="card-link">Microsoft Services</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">IT Infrastructure Manager</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Rusfinance, Jun 2003 - Jan 2008</h6>
+              <p class="card-text">Managing daily operations and IT projects for big retail bank across Russia.</p>
+              <a href="https://rusfinancebank.ru" class="card-link">Rusfinance Bank</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Programmer & IT admin</h5>
+              <h6 class="card-subtitle mb-2 text-muted">CTC-Volga, Feb 2001 - June 2003</h6>
+              <p class="card-text">Writing and supporting code for a local TV station. Managing IT infrastructure.</p>
+              <a href="https://ctc.ru/" class="card-link">CTC TV stations network</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3>Skills</h3>
+    <span class="badge badge-primary">Red Hat Linux</span>
+    <span class="badge badge-primary">Microsoft Windows Server</span>
+    <span class="badge badge-secondary">Mysql</span>
+    <span class="badge badge-success">C#</span>
+    <span class="badge badge-success">Python</span>
+    <span class="badge badge-success">Perl</span>
+    <span class="badge badge-info">Flask</span>
+    <span class="badge badge-info">Django</span>
+    <h3>Spoken languages</h3>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Russian
+        <span class="badge badge-primary badge-pill">Native</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        English
+        <span class="badge badge-primary badge-pill">Fluent</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        German
+        <span class="badge badge-primary badge-pill">Fluent</span>
+      </li>
+    </ul>
+
+  </div>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+      <span class="navbar-brand">Project #0</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item" active>
+            <a class="nav-link" href="#">CV</a>
+            <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chess</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </body>
+
 </html>
