@@ -1,47 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>My Webpage</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <title>My webpage::Chess</title>
 </head>
-<body>
-	<h1>The game of chess</h1>
-	<div class="intro">
-		<p>
-			Frankly speaking I'm not that good at chess, but I love the game very much.
-			I was playing as a kid, same as everyone, but didn't make much progress. I started
-			re-learning the game recently after I watched a move about Bobby Fisher. Great movie
-			really woth watching it even if you don't like the game itself.
-		</p>
-		<p>
-			Now I'm learning Caro Cann defence for black and would publish here some interesting
-			games and variations along with my latest win for black.
-		</p>
-	</div>
-	<table width=50%>
-		<tr>
-			<th>Variation</th>
-			<th>PGN files</th>
-		</tr>
-		<tr>
-			<td style="text-align: center;">Advance Variation</td>
-			<td>
-				<ol>
-					<li><a href="Tartakower-Duras.pgn">Tartakower-Duras</a></li>
-					<li><a href="Allies-Capablanca.pgn">Allies-Capablanca</a></li>
-					<li><a href="Pimental-Orr.pgn">Pimental-Orr</a></li>
-				</ol>
-			</td>
-		</tr>
-	</table>
-	<div class="main">
-		<iframe src="https://lichess.org/embed/btqzGugc?theme=auto&bg=auto" width=600 height=397 frameborder=0></iframe>
-	</div>
-	<div id="menu">
-		<a href = "index.html">Main</a> |
-		<a href = "cv.html">CV</a> |
-		<a href = "chess.html">Chess</a> |
-		<a href = "contact.html">Contact</a>
-	</div>
+
+<body style="padding-bottom: 70px">
+  <div class="container-fluid" style="background-color:#d3f5ff; padding-bottom: 10px">
+    <h1>Carro Cann</h1>
+    <h2>Defence for black</h2>
+    <p>
+      The Caro–Kann Defence is a chess opening characterised by the moves:
+      <br>
+      <span class="text-monospace font-weight-bold">1. e4 c6</span>
+      <br> The Caro–Kann is a common defence against the King's Pawn Opening and is classified as a "Semi-Open Game" like the
+      Sicilian Defence and French Defence, although it is thought to be more solid and less dynamic than either of those
+      openings. It often leads to good endgames for Black, who has the better pawn structure.
+      <br>
+    </p>
+  </div>
+  <div class="container">
+    <h3>Most popular variations</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="advanced_small.png">
+            <div class="card-body">
+              <h5 class="card-title">Advanced variation</h5>
+              <p class="card-text">The 3...Bf5 variation that follows with 1.e4 c6 2.d4 d5 3.e5 Bf5 has gained popularity after having previously
+                been widely regarded as inferior for many years, owing chiefly to the strategic demolition that Aron Nimzowitsch
+                (playing as White) suffered at the hands of José Capablanca in one of their games at the New York 1927 tournament.</p>
+              <a href="Allies-Capablanca.pgn" class="btn btn-primary">Allies - Capablanca, 1920</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="exchange_small.png">
+            <div class="card-body">
+              <h5 class="card-title">Exchange variation</h5>
+              <p class="card-text">The "true" Exchange Variation begins with 4.Bd3 (to prevent ...Bf5 while still developing) 4...Nc6 5.c3 Nf6
+                6.Bf4 Bg4 7.Qb3. This line is considered to offer equal chances, and was tried by Bobby Fischer. Some of
+                the strategic ideas are analogous to the Queen's Gambit Declined, Exchange Variation, (1.d4 d5 2.c4 e6 3.Nc3
+                Nf6 4.cxd5 exd5) with colours reversed.</p>
+              <a href="Honfi-Portish.pgn" class="btn btn-primary">Honfi - Portish, 1962</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="panov_small.png">
+            <div class="card-body">
+              <h5 class="card-title">Panov attack</h5>
+              <p class="card-text">The Panov Attack begins with the move 4.c4. It is named after Vasily Panov and the world champion Mikhail Botvinnik.
+                This system often leads to isolated queen's pawn positions, with White obtaining rapid development, a grip
+                on e5, and kingside attacking chances to compensate for the long-term structural weakness of the isolated
+                d4-pawn.
+              </p>
+              <a href="Schlensker-Unzicker.pgn" class="btn btn-primary">Schlensker - Unzicker, 1948</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3>One of my recent Caro–Kann based games</h3>
+    <div class="text-center">
+      <iframe width="600" height="397" src="https://lichess.org/embed/btqzGugc?theme=auto&amp;bg=auto" frameborder="0"></iframe>
+    </div>
+  </div>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+      <span class="navbar-brand">Project #0</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Chess</a>
+            <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </body>
+
 </html>
