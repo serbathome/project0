@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MyWebpage - Contact Information</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <h1>My Contact Information</h1>
-  <p>
-    I'm not too much social in real life and therefore available on practically every social network.
-  </p>
-  <p>
-    Linkedin: <a href="https://www.linkedin.com/in/sergey-biryukov-97600825/">My professional profile</a>
-  </p>
-  <p>
-    Facebook: <a href="https://www.facebook.com/sbiryukov">My facebook profile for friends</a>
-  </p>
-  <p>
-    VK: <a href="https://vk.com/id223987497">I'm not a huge fan of Vkontakte, but still have an account there</a>
-  </p>
-  <p>
-    Instagram: <a href="https://www.instagram.com/serbathome/">Majority of my public photos can be found here</a>
-  </p>
-  <p>
-    You can reach to me via messengers too.
-  </p>
-  <p>
-    Telegram: @serbathome<br>
-    Whatsapp: @serbathome
-  </p>
-  <p>
-    And of course there are rather traditional ways of communication.<br>
-    Email: <a href="mailto:serb@codepros.ru">serb at codepros.ru</a><br>
-    Phone: +79030064614<br>
-  </p>
 
-  <div id="menu">
-    <a href = "index.html">Main</a> |
-    <a href = "cv.html">CV</a> |
-    <a href = "chess.html">Chess</a> |
-    <a href = "contact.html">Contact</a>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/brands.css" integrity="sha384-SYNjKRRe+vDW0KSn/LrkhG++hqCLJg9ev1jIh8CHKuEA132pgAz+WofmKAhPpTR7"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/fontawesome.css" integrity="sha384-0b7ERybvrT5RZyD80ojw6KNKz6nIAlgOKXIcJ0CV7A6Iia8yt2y1bBfLBOwoc9fQ"
+    crossorigin="anonymous">
+  <title>My webpage::Contacts</title>
+</head>
+
+<body style="padding-bottom: 70px">
+  <h1>My Contacts</h1>
+  <div class="container">
+    <div class="text-center">
+      <img src="mypic.png" class="rounded-circle img-fluid">
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col col-md-auto">
+        <a href="https://www.facebook.com/sbiryukov">
+          Facebook
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </div>
+      <div class="col col-md-auto">
+        <a href="https://www.instagram.com/serbathome">
+          Instagram
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="col col-md-auto">
+        <a href="https://www.linkedin.com/in/sergey-biryukov-97600825">
+          Linkedin
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+      <span class="navbar-brand">Project #0</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chess.html">Chess</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contacts</a>
+            <span class="sr-only">(current)</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </body>
+
 </html>
